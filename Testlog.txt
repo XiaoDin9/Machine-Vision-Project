@@ -1,0 +1,598 @@
+进入函数：test_testCBase
+Version:0.1.0 Debug
+测试[通过]:0 == g_zv_errLastError
+测试结果：通过
+离开函数
+
+进入函数：test_testBase
+Version:0.1.0 Debug
+测试[通过]:0x1001 == g_zv_errStatus
+测试[通过]:0 == g_zv_errStatus
+测试[通过]:0x1002 == g_zv_errLastError
+测试[通过]:0 == g_zv_errLastError
+测试[通过]:'\0' == g_zv_errLastErrorMsg[0]
+测试[通过]:false == g_zv_sysIsDrawFill
+测试[通过]:26066955 == zv_sysGetParamInt("Test")
+测试[通过]:888 == zv_sysGetParamInt("Test")
+测试[通过]:ZV_PI(3.141593) == zv_sysGetParamDouble("Test")(3.141593)
+测试结果：通过
+离开函数
+
+进入函数：test_testPass
+模拟测试成功情况
+测试结果：通过
+离开函数
+
+进入函数：test_testFail
+模拟测试失败情况
+不计入统计数据
+测试结果：失败
+离开函数
+数据缓存：0
+
+进入函数：test_zv_matGenEye
+测试[通过]：g_test_matSrc == g_test_matDst
+测试结果：通过
+离开函数
+
+进入函数：test_zv_matGetData
+测试[通过]：Src2Data == data
+测试结果：通过
+离开函数
+
+进入函数：test_zv_matCopy
+测试[通过]：g_test_matStdOut == g_test_matDst
+测试结果：通过
+离开函数
+
+进入函数：test_zv_matGetSub
+测试[通过]：dst == g_test_imgStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_contGen
+测试[通过]：g_test_matDst == g_test_matStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_contFromMatrix
+测试[通过]：g_test_matSrc == g_test_matStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_imgConvert
+测试结果：通过
+离开函数
+
+进入函数：test_zv_arithAbs
+时间统计(171.761ms)：zv_arithAbs(tmp, dst)
+测试结果：通过
+离开函数
+
+进入函数：test_zv_arithAbsDiff
+测试[通过]：g_test_matDst == g_test_matStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_arithAdd
+测试[通过]：g_test_matDst == g_test_matStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_arithAddWeighted
+测试[通过]：g_test_matDst == g_test_matStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_arithSin
+测试[通过]：g_test_matDst == g_test_matStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_arithAsin
+时间统计(16.698ms)：zv_arithAsin(cvtDb, g_test_matDst)
+测试[通过]：g_test_matDst == g_test_matStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_arithAcos
+时间统计(14.382ms)：zv_arithAcos(cvtDb, g_test_matDst)
+测试[通过]：g_test_matDst == g_test_matStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_arithAnd
+测试[通过]:0 == g_zv_errLastError
+测试[通过]：dst == g_test_imgStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_arithHist
+测试[通过]：g_test_matDst == g_test_matStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_ipMirror
+测试[通过]：dst == g_test_imgStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_ipRotate
+测试[通过]：dst == g_test_imgStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_ipZoom
+测试[通过]：dst == g_test_imgStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_ipAffine
+测试[通过]：dst == g_test_imgStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_ipPerspective
+测试结果：通过
+离开函数
+
+进入函数：test_zv_ipRgbToGray
+时间统计(15.557ms)：zv_ipRgbToGray(test_frm_getImgSrc(4), dst)
+测试[通过]：dst == stdGray
+测试结果：通过
+离开函数
+
+进入函数：test_zv_ipThreshold
+时间统计(6.459ms)：zv_ipThreshold(test_frm_getImgSrc(5), dst, 100, 255, false)
+测试[通过]：dst == imgStd
+测试结果：通过
+离开函数
+
+进入函数：test_zv_ipThreshold1
+测试[通过]：dst == stdGray
+测试结果：通过
+离开函数
+
+进入函数：test_zv_ipEqualizeHist
+测试[通过]：dst == g_test_imgStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_ipMeanBlur
+测试[通过]：dst == g_test_imgStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_ipGaussBlur
+测试[通过]：dst == g_test_imgStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_ipCanny
+测试[通过]：dst == g_test_imgStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_ipSobel
+测试[通过]：dst == g_test_imgStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_ipOpening
+测试[通过]：dst == g_test_imgStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_ipClosing
+测试[通过]：dst == g_test_imgStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_fileReadImage_c
+时间统计(23.853ms)：zv_fileReadImage(img, fileName, ZV_READ_RAW)
+ReadImage:../Data/1-RGBA.jpg
+测试[通过]:642 == zv_imgWidth(img)
+测试[通过]:484 == zv_imgHeight(img)
+测试结果：通过
+离开函数
+
+进入函数：test_zv_fileReadImage
+测试[通过]：src == dst
+测试结果：通过
+离开函数
+
+进入函数：test_zv_fileWriteImage
+测试[通过]：src == dst
+测试结果：通过
+离开函数
+
+进入函数：test_zv_fileReadMatrix
+测试[通过]：g_test_matSrc == g_test_matStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_fileWriteMatrix
+测试[通过]：g_test_matSrc == g_test_matStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_fileMatrix
+测试[通过]：g_test_matSrc == g_test_matStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_fileMatrix_update
+测试[通过]：g_test_matSrc == g_test_matStdOut
+测试[通过]：g_test_matSrc == g_test_matStdOut
+测试[通过]：g_test_matSrc == g_test_matStdOut
+测试结果：通过
+离开函数
+
+进入函数：test_zv_contArea
+Area:123211.00000000
+测试[通过]:fabs(area - 123211) < 0.1
+测试结果：通过
+离开函数
+
+进入函数：test_zv_tkFitPolyn
+时间统计(0.147ms)：zv_tkFitPolyn(g_test_matSrc, 2, param)
+测试[通过]：param == paramStd
+测试结果：通过
+离开函数
+
+进入函数：test_zv_matchFastTempl
+测试[通过]：pos == stdPos
+测试结果：通过
+离开函数
+
+进入函数：test_zv_matchBestTempl
+时间统计(179.800ms)：zv_matchBestTempl(src, temp, 60, pos, true, 0)
+测试[通过]：pos == stdPos
+测试结果：通过
+离开函数
+
+进入函数：test_zv_matchMultiTempl
+时间统计(184.482ms)：zv_matchMultiTempl(src, temp, rst, minScore, num, 20, true, polar)
+Total Match 19
+测试[通过]：maxPos == stdPos
+测试结果：通过
+离开函数
+
+进入函数：test_zv_matchMultiTempl1
+时间统计(203.651ms)：zv_matchMultiTempl(src, temp, rst, minScore, num, 20, true, polar)
+Total Match 19
+测试[通过]：maxPos == stdPos
+时间统计(288.337ms)：zv_matchMultiTempl(src, temp, rst, minScore, num, 20, true, polar)
+Total Match 58
+测试[通过]：maxPos == stdPos
+时间统计(253.334ms)：zv_matchMultiTempl(src, temp, rst, minScore, num, 20, true, polar)
+Total Match 10
+测试[通过]：maxPos == stdPos
+测试[通过]:10 == zv_matRows(g_test_matSrc2)
+测试前10个匹配是否相同
+测试[通过]：maxPos == stdPos
+测试[通过]：maxPos == stdPos
+测试[通过]：maxPos == stdPos
+测试[通过]：maxPos == stdPos
+测试[通过]：maxPos == stdPos
+测试[通过]：maxPos == stdPos
+测试[通过]：maxPos == stdPos
+测试[通过]：maxPos == stdPos
+测试[通过]：maxPos == stdPos
+测试[通过]：maxPos == stdPos
+测试[通过]：maxPos == stdPos
+测试[通过]：maxPos == stdPos
+测试[通过]：maxPos == stdPos
+测试[通过]：maxPos == stdPos
+测试[通过]：maxPos == stdPos
+测试[通过]：maxPos == stdPos
+测试[通过]：maxPos == stdPos
+测试[通过]：maxPos == stdPos
+
+进入函数：test_testTime
+Sleep(1):0.710202
+测试[通过]:abs(times-1) < 1
+Sleep(1):0.025144
+测试[通过]:abs(times - 1) < 1
+Sleep(2):1.290578
+测试[通过]:abs(times - 2) < 1
+Sleep(2):1.262354
+测试[通过]:abs(times - 2) < 1
+Sleep(5):3.769615
+测试[失败]:abs(times - 5) < 1
+测试结果：失败
+离开函数
+数据缓存：1
+
+进入函数：test_Perf_ptrVfun
+数据类型：32S
+直接使用指针
+测试[通过]:0 == zv_sysGetParamInt("OptLevel")
+时间统计(146.897ms)：zv_arithAbs(tmp, dst1)
+库函数调用
+测试[通过]:2 == zv_sysGetParamInt("OptLevel")
+时间统计(354.435ms)：zv_arithAbs(tmp, dst2)
+测试[通过]：dst1 == dst2
+数据类型：64F
+直接使用指针
+测试[通过]:0 == zv_sysGetParamInt("OptLevel")
+时间统计(1460.876ms)：zv_arithAbs(tmp, dst3)
+库函数调用
+测试[通过]:2 == zv_sysGetParamInt("OptLevel")
+时间统计(1144.911ms)：zv_arithAbs(tmp, dst4)
+测试[通过]：dst3 == dst4
+测试结果：通过
+离开函数
+
+进入函数：test_Perf_ptrViterVat
+数据类型：64F
+指针遍历
+测试[通过]:0 == zv_sysGetParamInt("OptLevel")
+时间统计(15.928ms)：zv_arithAcos(tmp, g_test_matDst)
+迭代
+测试[通过]:3 == zv_sysGetParamInt("OptLevel")
+时间统计(382.723ms)：zv_arithAcos(tmp, matDst1)
+逐像素访问
+测试[通过]:4 == zv_sysGetParamInt("OptLevel")
+时间统计(125.793ms)：zv_arithAcos(tmp, matDst)
+测试[通过]：g_test_matDst == matDst1
+测试[通过]：matDst == matDst1
+测试结果：通过
+离开函数
+
+进入函数：test_Perf_expVfun
+图像元数据：640x480 - UndefC1
+矩阵表达式
+测试[通过]:0 == zv_sysGetParamInt("OptLevel")
+时间统计(23.361ms)：zv_arithMul(tmp, tmp, dst1, 0.8, 0.0)
+函数调用
+测试[通过]:2 == zv_sysGetParamInt("OptLevel")
+时间统计(11.980ms)：zv_arithMul(tmp, tmp, dst2, 0.8, 0.0)
+测试[通过]：dst1 == dst2
+测试结果：通过
+离开函数
+
+进入函数：test_Perf_ptrVexp
+图像元数据：(640x480) -cn1 - 64F
+矩阵表达式
+测试[通过]:0 == zv_sysGetParamInt("OptLevel")
+时间统计(39.175ms)：zv_arithDiv(tmp, tmp, dst1, 0.8, 0.1)
+指针遍历
+测试[通过]:3 == zv_sysGetParamInt("OptLevel")
+时间统计(3.997ms)：zv_arithDiv(tmp, tmp, dst2, 0.8, 0.1)
+测试[通过]：dst1 == dst2
+测试[通过]:t2 < t1
+测试结果：通过
+离开函数
+
+进入函数：test_Perf_expVfun1
+图像元数据：(2592x1944) -cn3 - 64F
+矩阵表达式
+测试[通过]:0 == zv_sysGetParamInt("OptLevel")
+时间统计(337.566ms)：zv_arithMul(tmp, tmp, dst1, 0.8, 0.0)
+函数调用
+测试[通过]:2 == zv_sysGetParamInt("OptLevel")
+时间统计(115.085ms)：zv_arithMul(tmp, tmp, dst2, 0.8, 0.0)
+测试[通过]：dst1 == dst2
+测试结果：通过
+离开函数
+
+进入函数：test_Perf_ptrVexp1
+图像元数据：(2592x1944) -cn1 - 64F
+矩阵表达式
+测试[通过]:0 == zv_sysGetParamInt("OptLevel")
+时间统计(682.656ms)：zv_arithDiv(tmp, tmp, dst1, 0.8, 0.1)
+指针遍历
+测试[通过]:3 == zv_sysGetParamInt("OptLevel")
+时间统计(61.110ms)：zv_arithDiv(tmp, tmp, dst2, 0.8, 0.1)
+测试[通过]：dst1 == dst2
+测试结果：通过
+离开函数
+
+进入函数：test_Perf_ptrVtemp
+图像元数据：(640x480) -cn1 - 2
+模板函数
+测试[通过]:0 == zv_sysGetParamInt("OptLevel")
+时间统计(70.658ms)：zv_arithAtan2(tmp1, tmp2, dst1)
+指针
+测试[通过]:2 == zv_sysGetParamInt("OptLevel")
+时间统计(60.311ms)：zv_arithAtan2(tmp1, tmp2, dst2)
+测试[通过]：dst1 == dst2
+测试结果：通过
+离开函数
+
+进入函数：test_Perf_funVtemp
+图像元数据：640x480 - 32SC1
+指数 - 0
+模板
+测试[通过]:0 == zv_sysGetParamInt("OptLevel")
+时间统计(4.890ms)：zv_arithPow(tmp, dst1, 0)
+函数
+测试[通过]:3 == zv_sysGetParamInt("OptLevel")
+时间统计(1.458ms)：zv_arithPow(tmp, dst2, 0)
+测试[通过]：dst1 == dst2
+指数 - 1.2
+模板
+测试[通过]:0 == zv_sysGetParamInt("OptLevel")
+时间统计(14.253ms)：zv_arithPow(tmp, dst1, 1.2)
+函数
+测试[通过]:3 == zv_sysGetParamInt("OptLevel")
+时间统计(13.957ms)：zv_arithPow(tmp, dst2, 1.2)
+测试[通过]：dst1 == dst2
+测试结果：通过
+离开函数
+
+进入函数：test_FlowGrabBasler
+运行失败[0X2209]：2018-08-09 11:07:57.244000 错误[0x2209]：未发现相机函数：zv_task_cam_scan，位置[0076]：f:\zo_svn\zvisionproject\zvision\system\zv_task.cpp
+
+函数：zv_camScan("Basler")测试结果：失败
+离开函数
+数据缓存：2
+
+进入函数：test_FlowGrabTIS
+运行失败[0X2209]：2018-08-09 11:08:03.606000 错误[0x2209]：未发现相机函数：zv_task_cam_scan，位置[0076]：f:\zo_svn\zvisionproject\zvision\system\zv_task.cpp
+
+函数：zv_camScan("TIS")测试结果：失败
+离开函数
+数据缓存：3
+
+进入函数：test_FlowGrabMix
+Scan: Basler;TIS
+运行失败[0X2209]：2018-08-09 11:08:03.873000 错误[0x2209]：未发现相机函数：zv_task_cam_scan，位置[0076]：f:\zo_svn\zvisionproject\zvision\system\zv_task.cpp
+
+函数：zv_camScan(scan)测试结果：失败
+离开函数
+数据缓存：4
+
+进入函数：test_FlowCalib
+运行失败[0X3B03]：2018-08-09 11:08:03.922000 错误[0x3B03]：变换矩阵错误函数：zv_task_tk_estimateSimilarity，位置[1036]：f:\zo_svn\zvisionproject\zvision\system\zv_task.cpp
+测试结果：失败
+离开函数
+数据缓存：5
+
+进入函数：test_FlowBlobPos
+测试[通过]:1 <= count
+测试[通过]:1(1) == count(1)
+Center(307.22, 227.82)
+测试结果：通过
+离开函数
+
+进入函数：test_FlowMeasLine
+测试[通过]:0 == g_zv_errLastError
+时间统计(6.266ms)：zv_measLine(src, mr, lineParam, g_test_matDst)
+Line(225.159047, 214.323354, 419.727184, 263.160258)
+测试结果：通过
+离开函数
+
+进入函数：test_FlowMeasCircle
+测试[通过]:0 == g_zv_errLastError
+时间统计(37.732ms)：zv_measCircle(src, mr, circle, g_test_matDst)
+Circle(307.120287, 228.020426, 162.114616)
+测试结果：通过
+离开函数
+
+进入函数：test_FlowMeasCircle1
+测试[通过]:0 == g_zv_errLastError
+时间统计(21.095ms)：zv_measCircle(src, mr, circle, g_test_matDst)
+Circle(307.218860, 227.993975, 162.097149)
+测试结果：通过
+离开函数
+
+进入函数：test_FlowLinesIntersect
+测试[通过]:0 == g_zv_errLastError
+时间统计(15.380ms)：zv_measLine(src, mr0, lineParam, g_test_matDst)
+Line0(131.607945, 164.669715, 131.739131, 297.695275)
+时间统计(15.585ms)：zv_measLine(src, mr1, lineParam, g_test_matDst)
+Line1(234.169059, 437.149361, 523.475045, 437.576652)
+Sect(131.88, 437.00)
+测试结果：通过
+离开函数
+
+进入函数：test_zv_matchNccFind
+任务管理出错[0X1E00]：zv_matchNccFind(mod, src, g_test_matFrame, NumLevel, minScore, &x, &y, minDist, isSubPix)
+测试结果：失败
+离开函数
+数据缓存：0
+
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+任务管理出错[0X1E00]：zv_matchNccFind(mod, src, g_test_matFrame, NumLevel, minScore, &x, &y, minDist, isSubPix)
+测试结果：失败
+离开函数
+数据缓存：0
+
+进入函数：test_zv_matchNccFind
+任务管理出错[0X1E00]：zv_matchNccFind(mod, src, g_test_matFrame, NumLevel, minScore, &x, &y, minDist, isSubPix)
+测试结果：失败
+离开函数
+数据缓存：0
+
+进入函数：test_zv_matchNccFind
+任务管理出错[0X1E00]：zv_matchNccFind(mod, src, g_test_matFrame, NumLevel, minScore, &x, &y, minDist, isSubPix)
+测试结果：失败
+离开函数
+数据缓存：0
+
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+任务管理出错[0X1E00]：zv_matchNccFind(mod, src, g_test_matFrame, NumLevel, minScore, &x, &y, minDist, isSubPix)
+测试结果：失败
+离开函数
+数据缓存：0
+
+进入函数：test_zv_matchNccFind
+任务管理出错[0X1E00]：zv_matchNccFind(mod, src, g_test_matFrame, NumLevel, minScore, &x, &y, minDist, isSubPix)
+进入函数：test_zv_matchNccFind
+测试结果：通过
+离开函数
+
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+测试结果：通过
+离开函数
+
+进入函数：test_zv_matchNccFind
+测试结果：通过
+离开函数
+
+进入函数：test_zv_matchNccFind
+测试结果：通过
+离开函数
+
+进入函数：test_zv_matchNccFind
+测试结果：通过
+离开函数
+
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+测试结果：通过
+离开函数
+
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+测试结果：通过
+离开函数
+
+进入函数：test_zv_matchNccFind
+测试结果：通过
+离开函数
+
+进入函数：test_zv_matchNccFind
+测试结果：通过
+离开函数
+
+进入函数：test_zv_matchNccFind
+测试结果：通过
+离开函数
+
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind
+进入函数：test_zv_matchNccFind

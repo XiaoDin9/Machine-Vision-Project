@@ -1,0 +1,12 @@
+ZVision
+	依赖OpenCV
+	USB_BASLER 则依赖Basler
+	在zv_camera.cpp文件的USE_BASLER宏定义的情况下依赖Basler相机套件Pylon。
+
+Test
+	依赖ZVision
+	依赖QT
+
+Image_Program1
+	依赖ZVision
+	依赖QT
