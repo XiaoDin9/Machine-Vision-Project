@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowClass</class>
+ <widget class="QMainWindow" name="MainWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1477</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1220</width>
+      <height>700</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1220</width>
+       <height>700</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>AngsanaUPC</family>
+       <pointsize>48</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>ZVision 0.0.1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>700</y>
+      <width>1475</width>
+      <height>145</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1477</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="File">
+    <property name="title">
+     <string>文件(F)</string>
+    </property>
+    <widget class="QMenu" name="menuOpen">
+     <property name="title">
+      <string>File</string>
+     </property>
+     <addaction name="actionOpen_file"/>
+     <addaction name="actionOpen_Camer"/>
+    </widget>
+    <addaction name="menuOpen"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave_3"/>
+    <addaction name="separator"/>
+    <addaction name="actionClose"/>
+   </widget>
+   <widget class="QMenu" name="Image_process">
+    <property name="title">
+     <string>图像处理</string>
+    </property>
+    <addaction name="Grayscale_match"/>
+    <addaction name="separator"/>
+    <addaction name="actionShape_match"/>
+    <addaction name="separator"/>
+    <addaction name="actionSet_ROI"/>
+    <addaction name="separator"/>
+    <addaction name="actionRotary_offset_compensation"/>
+    <addaction name="separator"/>
+    <addaction name="actionFeature_extraction"/>
+    <addaction name="separator"/>
+    <addaction name="actionSpot_analysis"/>
+    <addaction name="separator"/>
+    <addaction name="actionEdges_and_contours"/>
+   </widget>
+   <widget class="QMenu" name="previous_process">
+    <property name="title">
+     <string>图像预处理</string>
+    </property>
+    <widget class="QMenu" name="Image_init">
+     <property name="title">
+      <string>Image Initialization</string>
+     </property>
+     <widget class="QMenu" name="menuMorphological">
+      <property name="title">
+       <string>Morphological</string>
+      </property>
+      <addaction name="actionCorrosion"/>
+      <addaction name="separator"/>
+      <addaction name="actionExpansion"/>
+      <addaction name="separator"/>
+      <addaction name="action_open_opreator"/>
+      <addaction name="separator"/>
+      <addaction name="actionClose_operator"/>
+     </widget>
+     <widget class="QMenu" name="menuEnhance">
+      <property name="title">
+       <string>Enhance</string>
+      </property>
+      <addaction name="actionLogarithmic_enhance"/>
+      <addaction name="separator"/>
+      <addaction name="Canny_edge_detection"/>
+      <addaction name="separator"/>
+      <addaction name="actionHistogram_equalization"/>
+      <addaction name="separator"/>
+      <addaction name="actionLaplacian_Image_Enhancement"/>
+      <addaction name="separator"/>
+      <addaction name="actionSobel_edge"/>
+     </widget>
+     <addaction name="menuMorphological"/>
+     <addaction name="separator"/>
+     <addaction name="menuEnhance"/>
+     <addaction name="separator"/>
+     <addaction name="actionColor_Transformation"/>
+     <addaction name="separator"/>
+     <addaction name="actionFilter"/>
+    </widget>
+    <widget class="QMenu" name="Default_extraction">
+     <property name="title">
+      <string>Defect extraction</string>
+     </property>
+     <widget class="QMenu" name="menuGray_difference">
+      <property name="title">
+       <string>Gray difference</string>
+      </property>
+      <addaction name="actionInter_frame_subtraction"/>
+      <addaction name="separator"/>
+      <addaction name="actionThree_frame_differential"/>
+     </widget>
+     <addaction name="menuGray_difference"/>
+     <addaction name="separator"/>
+     <addaction name="actionDynamic_binarization"/>
+    </widget>
+    <addaction name="Image_init"/>
+    <addaction name="separator"/>
+    <addaction name="actionImproved_Contrast"/>
+    <addaction name="separator"/>
+    <addaction name="actionGeometric_Transformation"/>
+    <addaction name="separator"/>
+    <addaction name="Default_extraction"/>
+   </widget>
+   <widget class="QMenu" name="View">
+    <property name="title">
+     <string>视图</string>
+    </property>
+    <addaction name="actionProcessed_image"/>
+    <addaction name="actionCoordinate_transformation"/>
+   </widget>
+   <widget class="QMenu" name="Help">
+    <property name="title">
+     <string>图像运算</string>
+    </property>
+    <addaction name="actionNumerical_operations"/>
+    <addaction name="actionGeometric_operations"/>
+    <addaction name="actionLogic_operation"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="ZV_Help"/>
+    <addaction name="separator"/>
+    <addaction name="ZV_Version"/>
+   </widget>
+   <widget class="QMenu" name="Set_Menu">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <widget class="QMenu" name="menuZV_Camera_Type">
+     <property name="title">
+      <string>ZV_Camera_Type</string>
+     </property>
+     <addaction name="ZV_CAMTYPE_GIGE"/>
+     <addaction name="separator"/>
+     <addaction name="ZV_CAMTYPE_V4L2"/>
+     <addaction name="separator"/>
+     <addaction name="ZV_CAMTYPE_OPENCV"/>
+     <addaction name="separator"/>
+     <addaction name="ZV_CAMTYPE_ARAVIS"/>
+    </widget>
+    <addaction name="menuZV_Camera_Type"/>
+    <addaction name="separator"/>
+    <addaction name="ZV_CameraParam_Set"/>
+   </widget>
+   <addaction name="File"/>
+   <addaction name="Set_Menu"/>
+   <addaction name="previous_process"/>
+   <addaction name="Image_process"/>
+   <addaction name="View"/>
+   <addaction name="Help"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action"/>
+   <addaction name="Open_Cammera"/>
+   <addaction name="actionSave"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_2">
+   <property name="font">
+    <font>
+     <family>Aharoni</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>8</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_3">
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_3"/>
+  </widget>
+  <action name="actionOpen_file">
+   <property name="text">
+    <string>Folder</string>
+   </property>
+  </action>
+  <action name="actionOpen_Camer">
+   <property name="text">
+    <string>Camer</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset>
+     <normaloff>Qt ico/File save1.ico</normaloff>Qt ico/File save1.ico</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="toolTip">
+    <string>保存文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="Grayscale_match">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Grayscale match</string>
+   </property>
+  </action>
+  <action name="actionOriginal_image">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Original image</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="icon">
+    <iconset>
+     <normaloff>Qt ico/File open.ico</normaloff>Qt ico/File open.ico</iconset>
+   </property>
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave_2">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSave_3">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionImage_filtering">
+   <property name="text">
+    <string>Image Filtering</string>
+   </property>
+  </action>
+  <action name="actionColor_Transformation">
+   <property name="text">
+    <string>Color Transformation</string>
+   </property>
+  </action>
+  <action name="actionGeometric_Transformation">
+   <property name="text">
+    <string>Geometric Transformation</string>
+   </property>
+  </action>
+  <action name="actionImproved_Contrast">
+   <property name="text">
+    <string>Improved Contrast</string>
+   </property>
+  </action>
+  <action name="actionOutput_image2">
+   <property name="text">
+    <string>Output image2</string>
+   </property>
+  </action>
+  <action name="actionOutput_image3">
+   <property name="text">
+    <string>Output image3</string>
+   </property>
+  </action>
+  <action name="actionOutput_image_2">
+   <property name="text">
+    <string>Output_image</string>
+   </property>
+  </action>
+  <action name="actionCorrosion">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Erode</string>
+   </property>
+  </action>
+  <action name="actionExpansion">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Dilate</string>
+   </property>
+  </action>
+  <action name="actionBoxFilter">
+   <property name="text">
+    <string>BoxFilter</string>
+   </property>
+  </action>
+  <action name="actionBlur_Filter">
+   <property name="text">
+    <string>Blur_Filter</string>
+   </property>
+  </action>
+  <action name="actionGaussianBlur">
+   <property name="text">
+    <string>GaussianBlur</string>
+   </property>
+  </action>
+  <action name="actionMedianBlur">
+   <property name="text">
+    <string>medianBlur</string>
+   </property>
+  </action>
+  <action name="actionBilateralFilter">
+   <property name="text">
+    <string>bilateralFilter</string>
+   </property>
+  </action>
+  <action name="actionLogarithmic_enhance">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Logarithmic enhance</string>
+   </property>
+  </action>
+  <action name="Canny_edge_detection">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Canny edge detection</string>
+   </property>
+  </action>
+  <action name="actionHistogram_equalization">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Histogram equalization</string>
+   </property>
+  </action>
+  <action name="actionLaplacian_Image_Enhancement">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Laplacian Image Enhancement</string>
+   </property>
+  </action>
+  <action name="actionFilter">
+   <property name="text">
+    <string>Filter</string>
+   </property>
+  </action>
+  <action name="Open_Cammera">
+   <property name="icon">
+    <iconset>
+     <normaloff>Qt ico/Camera.ico</normaloff>Qt ico/Camera.ico</iconset>
+   </property>
+   <property name="text">
+    <string>打开Cammera</string>
+   </property>
+  </action>
+  <action name="actionProcessed_image">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Processed image</string>
+   </property>
+  </action>
+  <action name="action_open_opreator">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Open_operator</string>
+   </property>
+  </action>
+  <action name="actionClose_operator">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Close_operator</string>
+   </property>
+  </action>
+  <action name="actionSobel_edge">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Sobel edge</string>
+   </property>
+  </action>
+  <action name="actionDynamic_binarization">
+   <property name="text">
+    <string>Dynamic binarization</string>
+   </property>
+  </action>
+  <action name="actionInter_frame_subtraction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Inter-frame subtraction</string>
+   </property>
+  </action>
+  <action name="actionThree_frame_differential">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Three-frame differential</string>
+   </property>
+  </action>
+  <action name="actionShape_match">
+   <property name="text">
+    <string>Shape
+match</string>
+   </property>
+  </action>
+  <action name="actionSet_ROI">
+   <property name="text">
+    <string>Set ROI</string>
+   </property>
+  </action>
+  <action name="actionRotary_offset_compensation">
+   <property name="text">
+    <string>Rotary offset compensation</string>
+   </property>
+  </action>
+  <action name="actionFeature_extraction">
+   <property name="text">
+    <string>Feature extraction</string>
+   </property>
+  </action>
+  <action name="actionSpot_analysis">
+   <property name="text">
+    <string>Spot analysis</string>
+   </property>
+  </action>
+  <action name="actionEdges_and_contours">
+   <property name="text">
+    <string>Edges and contours</string>
+   </property>
+  </action>
+  <action name="actionNumerical_operations">
+   <property name="text">
+    <string>Numerical operations</string>
+   </property>
+  </action>
+  <action name="actionGeometric_operations">
+   <property name="text">
+    <string>Geometric operations</string>
+   </property>
+  </action>
+  <action name="actionLogic_operation">
+   <property name="text">
+    <string>logic operation</string>
+   </property>
+  </action>
+  <action name="actionCoordinate_transformation">
+   <property name="text">
+    <string>Coordinate transformation</string>
+   </property>
+  </action>
+  <action name="actionZVision_help">
+   <property name="text">
+    <string>ZVision help</string>
+   </property>
+  </action>
+  <action name="ZV_Help">
+   <property name="text">
+    <string>ZVision Help</string>
+   </property>
+  </action>
+  <action name="ZV_Version">
+   <property name="text">
+    <string>About ZVision</string>
+   </property>
+  </action>
+  <action name="ZV_CameraParam_Set">
+   <property name="text">
+    <string>ZV_CameraParam_Set</string>
+   </property>
+  </action>
+  <action name="ZV_CAMTYPE_GIGE">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>ZV_CAMTYPE_GIGE</string>
+   </property>
+  </action>
+  <action name="ZV_CAMTYPE_V4L2">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>ZV_CAMTYPE_V4L2</string>
+   </property>
+  </action>
+  <action name="ZV_CAMTYPE_OPENCV">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>ZV_CAMTYPE_OPENCV</string>
+   </property>
+  </action>
+  <action name="ZV_CAMTYPE_ARAVIS">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>ZV_CAMTYPE_ARAVIS</string>
+   </property>
+  </action>
+  <zorder>dockWidget_2</zorder>
+  <zorder>dockWidget_3</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ZVisionSystem.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <slot>Action_Filefolder_triggered()</slot>
+  <slot>on_action_Cammera()</slot>
+  <slot>Action_Open_triggered()</slot>
+  <slot>Action_Save_triggered()</slot>
+  <slot>Action_Close_triggered()</slot>
+  <slot>Action_Color_Transformation_triggered()</slot>
+  <slot>Action_Output_image_triggered()</slot>
+  <slot>boxFilter()</slot>
+  <slot>blur()</slot>
+  <slot>GaussianBlur()</slot>
+  <slot>Media_filter()</slot>
+  <slot>Bilateral_filter()</slot>
+  <slot>on_actionFilter_triggered()</slot>
+  <slot>on_actionmenuEnhance_triggered()</slot>
+  <slot>on_Corrosion_triggered()</slot>
+  <slot>on_Expansion_triggered()</slot>
+  <slot>on_Logarithmic_enhance_triggered()</slot>
+  <slot>on_Canny_edge_detection_triggered()</slot>
+  <slot>on_Histogram_equalization_triggered()</slot>
+  <slot>on_Laplacian_enhancement_triggered()</slot>
+  <slot>on_actionSobel_edge()</slot>
+  <slot>on_next_picture_clicked()</slot>
+  <slot>on_Original_image_view()</slot>
+  <slot>on_Porcessed_image_view()</slot>
+  <slot>on_last_image_view()</slot>
+  <slot>on_Open_operator_triggered()</slot>
+  <slot>on_Close_operator_triggered()</slot>
+  <slot>on_actionInter_frame_subtraction()</slot>
+  <slot>on_actionThree_frame_differential()</slot>
+  <slot>on_Grayscale_match()</slot>
+  <slot>on_play_clicked()</slot>
+  <slot>on_pause_clicked()</slot>
+  <slot>on_PauseGrabbing_clicked()</slot>
+  <slot>on_StopPlay_clickede()</slot>
+  <slot>ZV_Version_triggered()</slot>
+  <slot>ZV_CameraParmSet_triggered()</slot>
+  <slot>ZV_CameraTyep_Gige_triggered()</slot>
+  <slot>ZV_CameraTyep_V4L2_triggered()</slot>
+  <slot>ZV_CameraTyep_Opencv_triggered()</slot>
+  <slot>ZV_CameraTyep_Aravis_triggered()</slot>
+ </slots>
+</ui>

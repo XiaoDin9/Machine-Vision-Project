@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<ZvMat type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    0. 1. 2. 12. 13. 14. 24. 25. 26.</data></ZvMat>
+</opencv_storage>

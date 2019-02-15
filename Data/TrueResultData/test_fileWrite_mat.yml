@@ -1,0 +1,7 @@
+%YAML:1.0
+---
+WriteMatrix: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 10., 11., 2., -15., 34., -13., 47., -29., 58. ]

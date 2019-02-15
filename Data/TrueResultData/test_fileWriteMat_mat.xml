@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<WriteMatrix type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    10. 11. 2. -15. 34. -13. 47. -29. 58.</data></WriteMatrix>
+</opencv_storage>

@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Color_Transorm</class>
+ <widget class="QWidget" name="Color_Transorm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>931</width>
+    <height>660</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Color_Transorm</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>281</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>数据链接</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>输入图像：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>40</y>
+      <width>151</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>File</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Camera</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>处理后的图像：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_4">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>80</y>
+      <width>151</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Processed image</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>281</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>颜色转换</string>
+   </property>
+   <widget class="QRadioButton" name="radioButton">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>30</y>
+      <width>89</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RGB-&gt;HSV</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>89</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RGB-&gt;GRAY</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>89</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RGB-&gt;YCrCb</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_4">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>70</y>
+      <width>89</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RGB-&gt;HLS</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>340</y>
+     <width>281</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>显示设置</string>
+   </property>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>显示设置</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_5">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>30</y>
+      <width>151</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Original image</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Processed image</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>620</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>执行</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>620</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>620</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确认</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>10</y>
+     <width>601</width>
+     <height>641</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>0</y>
+     <width>11</width>
+     <height>651</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>0</y>
+     <width>610</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>650</y>
+     <width>930</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>10</y>
+     <width>10</width>
+     <height>650</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>11</width>
+     <height>651</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>300</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_21">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>300</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_22">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>310</y>
+     <width>300</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>comboBox</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>Color_Transorm</receiver>
+   <slot>On_comboBox_activated()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>256</x>
+     <y>61</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>301</x>
+     <y>36</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_5</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>Color_Transorm</receiver>
+   <slot>On_comboBox_5_activated()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>259</x>
+     <y>310</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>257</x>
+     <y>359</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Color_Transorm</receiver>
+   <slot>on_run_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>487</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>74</x>
+     <y>429</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_4</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>Color_Transorm</receiver>
+   <slot>On_comboBox_4_activated()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>217</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>209</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Color_Transorm</receiver>
+   <slot>on_radioButton_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>185</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>16</x>
+     <y>378</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Color_Transorm</receiver>
+   <slot>on_radioButton2_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>209</x>
+     <y>188</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>158</x>
+     <y>391</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>Color_Transorm</receiver>
+   <slot>on_radioButton3_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>183</x>
+     <y>230</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>203</x>
+     <y>411</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Color_Transorm</receiver>
+   <slot>on_sure_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>186</x>
+     <y>485</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>209</x>
+     <y>453</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Color_Transorm</receiver>
+   <slot>on_cancel_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>276</x>
+     <y>481</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>308</x>
+     <y>472</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Color_Transorm</receiver>
+   <slot>on_radioButton4_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>62</x>
+     <y>229</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>27</x>
+     <y>359</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>On_comboBox_activated()</slot>
+  <slot>On_comboBox_4_activated()</slot>
+  <slot>On_comboBox_5_activated()</slot>
+  <slot>on_run_clicked()</slot>
+  <slot>on_radioButton_clicked()</slot>
+  <slot>on_radioButton2_clicked()</slot>
+  <slot>on_radioButton3_clicked()</slot>
+  <slot>on_sure_clicked()</slot>
+  <slot>on_cancel_clicked()</slot>
+  <slot>on_radioButton4_clicked()</slot>
+ </slots>
+</ui>

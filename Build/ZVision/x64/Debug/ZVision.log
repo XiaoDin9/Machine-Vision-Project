@@ -1,0 +1,7 @@
+﻿  zv_match.cpp
+f:\zo_svn\zvisionproject\zvision\match\zv_match.h(108): warning C4002: “ZV_CHK_NULL4”宏的实参太多
+f:\zo_svn\zvisionproject\zvision\match\zv_match.cpp(294): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+f:\zo_svn\zvisionproject\zvision\match\zv_match.cpp(404): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+f:\zo_svn\zvisionproject\zvision\match\zv_match.cpp(371): warning C4101: “i”: 未引用的局部变量
+  ZVision.vcxproj -> F:\ZO_SVN\ZVisionProject\\x64_Debug\ZVisiond.dll
+  ZVision.vcxproj -> F:\ZO_SVN\ZVisionProject\\x64_Debug\ZVisiond.pdb (Full PDB)

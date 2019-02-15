@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{096884F7-5298-4232-93F4-74E7A52D36C1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ZVision</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files\Basler\pylon 5\Development\include;D:\Software\OpenCV-3.4.1-VS2015\include;.\include;.;$(IncludePath)</IncludePath>
+    <LibraryPath>C:/Program Files/Basler/pylon 5/Development/lib/x64;D:\Software\OpenCV-3.4.1-VS2015\staticlib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)\Bin\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>./3rd_party/tis_sdk/include;./3rd_party/basler_sdk/include;./3rd_party/opencv/include;.\include;.;$(IncludePath)</IncludePath>
+    <LibraryPath>3rd_party/tis_sdk/$(Platform);3rd_party/basler_sdk/$(Platform);./3rd_party/opencv/staticlib;$(LibraryPath)</LibraryPath>
+    <LinkIncremental>true</LinkIncremental>
+    <CustomBuildAfterTargets>Build</CustomBuildAfterTargets>
+    <IntDir>$(SolutionDir)Build\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)\$(Platform)_$(Configuration)\</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files\Basler\pylon 5\Development\include;D:\Software\OpenCV-3.4.1-VS2015\include;.\include;.;$(IncludePath)</IncludePath>
+    <LibraryPath>C:/Program Files/Basler/pylon 5/Development/lib/x64;D:\Software\OpenCV-3.4.1-VS2015\staticlib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)\Bin\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Program Files\Basler\pylon 5\Development\include;D:\Software\OpenCV-3.4.1-VS2015\include;.\include;.;$(IncludePath)</IncludePath>
+    <LibraryPath>C:/Program Files/Basler/pylon 5/Development/lib/x64;D:\Software\OpenCV-3.4.1-VS2015\staticlib;$(LibraryPath)</LibraryPath>
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)Build\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)\Bin\$(Platform)_$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;ZVISION_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;ZVISION_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>zlibd.lib;IlmImfd.lib;libjasperd.lib;libjpegd.lib;libpngd.lib;libtiffd.lib;libwebpd.lib;opencv_core341d.lib;opencv_imgcodecs341d.lib;opencv_imgproc341d.lib;opencv_videoio341d.lib;opencv_calib3d341d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+    </Link>
+    <CustomBuildStep>
+      <Command>install.bat $(Configuration)</Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Inputs>$(OutDir)$(TargetName)$(TargetExt)</Inputs>
+    </CustomBuildStep>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;ZVISION_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;ZVISION_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>zlib.lib;IlmImf.lib;libjasper.lib;libjpeg.lib;libpng.lib;libtiff.lib;libwebp.lib;opencv_core341.lib;opencv_imgcodecs341.lib;opencv_imgproc341.lib;opencv_videoio341.lib;opencv_calib3d341.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Inputs>
+      </Inputs>
+    </CustomBuildStep>
+    <PostBuildEvent>
+      <Command>install.bat $(Configuration)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="basis\zv_basis.h" />
+    <ClInclude Include="camera\zv_camera.h" />
+    <ClInclude Include="camera\zv_cam_basler.h" />
+    <ClInclude Include="camera\zv_cam_gige_vision.h" />
+    <ClInclude Include="camera\zv_cam_opencv.h" />
+    <ClInclude Include="camera\zv_cam_tis.h" />
+    <ClInclude Include="core\zv_core.h" />
+    <ClInclude Include="feature\zv_feature.h" />
+    <ClInclude Include="file\zv_file.h" />
+    <ClInclude Include="graphics\zv_graphics.h" />
+    <ClInclude Include="include\zv.h" />
+    <ClInclude Include="include\zvision.h" />
+    <ClInclude Include="include\zv_define.h" />
+    <ClInclude Include="include\zv_exptypes.h" />
+    <ClInclude Include="include\zv_module.h" />
+    <ClInclude Include="include\zv_types.h" />
+    <ClInclude Include="include\zv_version.h" />
+    <ClInclude Include="match\zv_match.h" />
+    <ClInclude Include="measure\zv_meas.h" />
+    <ClInclude Include="system\zv_adapter.h" />
+    <ClInclude Include="system\zv_error.h" />
+    <ClInclude Include="system\zv_system.h" />
+    <ClInclude Include="system\zv_task.h" />
+    <ClInclude Include="system\zv_task_param.h" />
+    <ClInclude Include="tools\zv_tools.h" />
+    <ClInclude Include="zv_private.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="basis\zv_arithmetic.cpp" />
+    <ClCompile Include="basis\zv_color.cpp" />
+    <ClCompile Include="basis\zv_filter.cpp" />
+    <ClCompile Include="basis\zv_geometric_img.cpp" />
+    <ClCompile Include="basis\zv_morph.cpp" />
+    <ClCompile Include="basis\zv_segment.cpp" />
+    <ClCompile Include="camera\zv_camera.cpp" />
+    <ClCompile Include="camera\zv_cam_basler.cpp" />
+    <ClCompile Include="camera\zv_cam_opencv.cpp" />
+    <ClCompile Include="camera\zv_cam_tis.cpp" />
+    <ClCompile Include="core\zv_contour.cpp" />
+    <ClCompile Include="core\zv_image.cpp" />
+    <ClCompile Include="core\zv_matrix.cpp" />
+    <ClCompile Include="feature\zv_contours.cpp" />
+    <ClCompile Include="file\zv_file.cpp" />
+    <ClCompile Include="graphics\zv_graphics.cpp" />
+    <ClCompile Include="match\zv_match.cpp" />
+    <ClCompile Include="measure\zv_meas.cpp" />
+    <ClCompile Include="system\zv_adapter.cpp" />
+    <ClCompile Include="system\zv_error.cpp" />
+    <ClCompile Include="system\zv_param.cpp" />
+    <ClCompile Include="system\zv_system.cpp" />
+    <ClCompile Include="system\zv_task.cpp" />
+    <ClCompile Include="tools\zv_geometry.cpp" />
+    <ClCompile Include="tools\zv_trans.cpp" />
+    <ClCompile Include="zv_module.cpp" />
+    <ClCompile Include="zv_test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="install.bat" />
+    <None Include="zv_module_gen.py" />
+    <None Include="zv_module_templ.py" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
