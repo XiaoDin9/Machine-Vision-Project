@@ -1,12 +1,12 @@
 ZVision
-	ÒÀÀµOpenCV
-	USB_BASLER ÔòÒÀÀµBasler
-	ÔÚzv_camera.cppÎÄ¼þµÄUSE_BASLERºê¶¨ÒåµÄÇé¿öÏÂÒÀÀµBaslerÏà»úÌ×¼þPylon¡£
+	ä¾èµ–OpenCV
+	USB_BASLER åˆ™ä¾èµ–Basler
+	åœ¨camera.cppæ–‡ä»¶çš„USE_BASLERå®å®šä¹‰çš„æƒ…å†µä¸‹ä¾èµ–Baslerç›¸æœºå¥—ä»¶Pylonã€‚
 
 Test
-	ÒÀÀµZVision
-	ÒÀÀµQT
+	ä¾èµ–Vision
+	ä¾èµ–QT
 
-Image_Program1
-	ÒÀÀµZVision
-	ÒÀÀµQT
+Image_Program
+	ä¾èµ–Vision
+	ä¾èµ–QT
