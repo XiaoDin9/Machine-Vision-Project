@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="Image_Program1">
-    <file>Qt ico/Windows Media Player.ico</file>
-    <file>Qt ico/File open.ico</file>
-  </qresource>
-</RCC>
